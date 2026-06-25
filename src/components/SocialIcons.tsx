@@ -88,7 +88,7 @@ const SocialIcons = () => {
       </div>
       <a
         className="resume-button"
-        href="https://chocolate-odella-90.tiiny.site/"
+        href="https://aquamarine-junie-94.tiiny.site/"
         target="_blank"
         rel="noreferrer"
       >
