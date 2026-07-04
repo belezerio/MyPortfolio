@@ -69,6 +69,27 @@ const projects: Project[] = [
     accentColor: "#f59e0b",
   },
   {
+    title: "JFL Digital",
+    category: "Marketing Agency Website",
+    filterCategory: "Frontend",
+    tech: {
+      frontend: "React, Next Js , GSAP",
+      backend: "None (Static Page)",
+      database: "None",
+      cloud: "Vercel, Git",
+    },
+    description: "Complete modern redesign for JFL Digital marketing agency, emphasizing visual storytelling, smooth transitions, and premium aesthetics.",
+    features: [
+      "Custom high-fidelity media carousel and slider animations",
+      "Sleek dark-mode aesthetic with immersive scroll-driven effects",
+      "Integrated live communication widgets including WhatsApp",
+      "Fully responsive architecture optimized for all device viewports",
+    ],
+    image: "/images/jfldigital.png",
+    link: "https://www.jfldigital.com",
+    accentColor: "#ec4899",
+  },
+  {
     title: "GoGuide",
     category: "Campus Mobile App",
     filterCategory: "Mobile",
