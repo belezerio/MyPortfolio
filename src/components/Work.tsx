@@ -26,6 +26,26 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "Tavel Infoline",
+    category: "Tour and Travels",
+    filterCategory: "Frontend",
+    tech: {
+      frontend: "React, Next Js , GSAP",
+      database: "None",
+      cloud: "Vercel, Git",
+    },
+    description: "Complete modern Website for Travel Infoline, emphasizing visual storytelling, smooth transitions, and premium aesthetics.",
+    features: [
+      "Custom high-fidelity media carousel and slider animations",
+      "Sleek Light-mode aesthetic with immersive scroll-driven effects",
+      // "Integrated live communication widgets including WhatsApp",
+      "Fully responsive architecture optimized for all device viewports",
+    ],
+    image: "/images/travelinfoline.jpg",
+    link: "https://www.travelinfoline.us",
+    accentColor: "#48c8ec",
+  },
+  {
     title: "JFL Digital",
     category: "Marketing Agency Website",
     filterCategory: "Frontend",
