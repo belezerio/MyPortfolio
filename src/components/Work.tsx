@@ -26,11 +26,36 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "World Padel League",
+    category: "Sports",
+    filterCategory: "FullStack",
+    tech: {
+      frontend: "React, Next Js , GSAP",
+      backend: "Typescript",
+      database: "Supabase(Postgresql)",
+      cloud: "Vercel, Git",
+    },
+    description:
+  "Complete modern website for World Padel League, delivering an immersive fan experience through cinematic sports storytelling, fluid interactions, premium animations, and high-performance design.",
+
+features: [
+  "Immersive hero experience with cinematic scroll-driven transitions",
+  // "Interactive player, team, and tournament showcases with premium animations",
+  "High-fidelity media galleries, match highlights, and dynamic content sliders",
+  "Luxury sports-inspired UI with seamless page transitions and micro-interactions",
+  "Fully responsive architecture optimized for desktop, tablet, and mobile devices",
+],
+    image: "/images/wpl.jpg",
+    link: "https://www.wplworld.com",
+    accentColor: "#D0DB51",
+  },
+  {
     title: "Tavel Infoline",
     category: "Tour and Travels",
     filterCategory: "Frontend",
     tech: {
       frontend: "React, Next Js , GSAP",
+      backend: "None",
       database: "None",
       cloud: "Vercel, Git",
     },
@@ -109,7 +134,7 @@ const projects: Project[] = [
     link: "https://jewellery-store-nu.vercel.app/",
     accentColor: "#f59e0b",
   },
-  
+
   {
     title: "GoGuide",
     category: "Campus Mobile App",
@@ -346,9 +371,9 @@ const Work = () => {
             style={
               selectedProject
                 ? ({
-                    "--accent-color": selectedProject.accentColor,
-                    "--accent-rgb": getRgb(selectedProject.accentColor),
-                  } as React.CSSProperties)
+                  "--accent-color": selectedProject.accentColor,
+                  "--accent-rgb": getRgb(selectedProject.accentColor),
+                } as React.CSSProperties)
                 : undefined
             }
           >
