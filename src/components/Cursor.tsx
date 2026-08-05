@@ -5,6 +5,10 @@ import gsap from "gsap";
 const Cursor = () => {
   const cursorRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
+    const isTouchDevice =
+      "ontouchstart" in window || navigator.maxTouchPoints > 0;
+    if (isTouchDevice) return;
+
     let hover = false;
     const cursor = cursorRef.current!;
     const mousePos = { x: 0, y: 0 };

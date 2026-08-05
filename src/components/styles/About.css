@@ -10,24 +10,26 @@
   margin: auto;
 }
 .about-me {
-  padding: 50px 0px;
-  padding-bottom: 0;
-  width: 500px;
-  max-width: calc(100% - 15px);
+  padding: 40px 0px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .about-me h3 {
-  font-size: 25px;
+  font-size: clamp(16px, 4.5vw, 25px);
   text-transform: uppercase;
-  letter-spacing: 7px;
+  letter-spacing: 4px;
   font-weight: 400;
   color: var(--accentColor);
+  margin-bottom: 12px;
 }
 
 .about-me p {
-  font-size: 33px;
-  font-weight: 600;
-  line-height: 36px;
-  letter-spacing: 1px;
+  font-size: clamp(20px, 5.5vw, 33px);
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: 0.5px;
+  margin: 0;
 }
 
 @media only screen and (min-width: 600px) {

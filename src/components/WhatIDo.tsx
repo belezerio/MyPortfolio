@@ -8,21 +8,20 @@ const WhatIDo = () => {
     containerRef.current[index] = el;
   };
   useEffect(() => {
-    if (ScrollTrigger.isTouch) {
-      containerRef.current.forEach((container) => {
-        if (container) {
+    const isTouchDevice =
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0 ||
+      ScrollTrigger.isTouch === 1;
+
+    containerRef.current.forEach((container) => {
+      if (container) {
+        if (isTouchDevice) {
           container.classList.remove("what-noTouch");
-          container.addEventListener("click", () => handleClick(container));
         }
-      });
-    }
-    return () => {
-      containerRef.current.forEach((container) => {
-        if (container) {
-          container.removeEventListener("click", () => handleClick(container));
-        }
-      });
-    };
+        const handler = () => handleClick(container);
+        container.addEventListener("click", handler);
+      }
+    });
   }, []);
   return (
     <div className="whatIDO">

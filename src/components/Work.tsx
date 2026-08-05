@@ -379,6 +379,7 @@ const Work = () => {
           >
             {selectedProject && (
               <div className="drawer-inner">
+                <div className="drawer-handle" />
                 {/* Close Button */}
                 <button
                   className="drawer-close-btn"

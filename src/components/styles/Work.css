@@ -650,6 +650,16 @@ body:has([data-cursor="disable"]:hover) .cursor-main {
   transform: translateY(-2px);
 }
 
+/* ── Drawer Handle Indicator for Mobile ── */
+.drawer-handle {
+  display: none;
+  width: 40px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 2px;
+  margin: -10px auto 20px auto;
+}
+
 /* ── Responsive & Media Queries ── */
 @media only screen and (max-width: 1400px) {
   .work-section .section-title {
@@ -666,11 +676,33 @@ body:has([data-cursor="disable"]:hover) .cursor-main {
 
 @media only screen and (max-width: 768px) {
   .work-section {
-    padding: 60px 0;
+    padding: 50px 0;
   }
 
   .work-section .section-title {
-    font-size: 42px;
+    font-size: clamp(32px, 8vw, 42px);
+  }
+
+  .filter-nav {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .filter-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 8px 18px;
+    font-size: 13px;
   }
 
   .projects-grid {
@@ -680,22 +712,30 @@ body:has([data-cursor="disable"]:hover) .cursor-main {
 
   .project-card {
     height: auto;
-    min-height: 420px;
+    min-height: 380px;
+  }
+
+  .project-card-media {
+    height: 180px;
+  }
+
+  .drawer-handle {
+    display: block;
   }
 
   /* Slide up from bottom on mobile */
   .drawer-container {
     width: 100vw;
-    height: 75vh;
+    height: 85vh;
     top: auto;
     bottom: 0;
     right: 0;
     border-left: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 20px 20px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 24px 24px 0 0;
     transform: translateY(100%);
-    box-shadow: 0 -15px 40px rgba(0, 0, 0, 0.5),
-      0 -5px 20px rgba(var(--accent-rgb), 0.08);
+    box-shadow: 0 -15px 40px rgba(0, 0, 0, 0.7),
+      0 -5px 20px rgba(var(--accent-rgb), 0.1);
   }
 
   .drawer-container.open {
@@ -703,19 +743,19 @@ body:has([data-cursor="disable"]:hover) .cursor-main {
   }
 
   .drawer-inner {
-    padding: 45px 24px 30px 24px;
+    padding: 24px 20px 30px 20px;
   }
 
   .drawer-close-btn {
     top: 16px;
     right: 16px;
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
     font-size: 18px;
   }
 
   .drawer-title {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .tech-stack-grid {
@@ -732,6 +772,6 @@ body:has([data-cursor="disable"]:hover) .cursor-main {
 
 @media only screen and (max-width: 480px) {
   .work-section .section-title {
-    font-size: 36px;
+    font-size: clamp(28px, 8vw, 36px);
   }
 }
