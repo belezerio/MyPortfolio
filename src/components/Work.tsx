@@ -71,6 +71,72 @@ features: [
     accentColor: "#48c8ec",
   },
   {
+    title: "Du Monde Travel",
+    category: "Tour and Travels",
+    filterCategory: "Frontend",
+    tech: {
+      frontend: "React, Next Js, GSAP",
+      backend: "None (Static Page)",
+      database: "None",
+      cloud: "Vercel, Git",
+    },
+    description:
+      "Premium travel platform for Du Monde Travel featuring curated tour packages, theme-based exploration, and an immersive booking experience with rich media storytelling.",
+    features: [
+      "Interactive featured tour carousel with cinematic hero section",
+      "Theme-based package exploration (Adventure, Beach, Family Getaways)",
+      "Detailed itinerary view with pricing, inclusions & booking dashboard",
+      "Fully responsive architecture optimized for all device viewports",
+    ],
+    image: "/images/dumonde_travel.png",
+    link: "https://dumonde-travel.vercel.app/",
+    accentColor: "#c8a84e",
+  },
+  {
+    title: "Sparkle One",
+    category: "Tour and Travels",
+    filterCategory: "Frontend",
+    tech: {
+      frontend: "React, Next Js, GSAP",
+      backend: "None (Static Page)",
+      database: "None",
+      cloud: "Vercel, Git",
+    },
+    description:
+      "Luxury travel experience platform for Sparkle One with handcrafted itineraries, curated international & domestic destinations, and immersive visual storytelling.",
+    features: [
+      "Full-screen cinematic hero with destination slider transitions",
+      "Curated Realms & international/domestic destination categorization",
+      "Integrated WhatsApp help widget and login authentication flow",
+      "Fully responsive architecture optimized for all device viewports",
+    ],
+    image: "/images/sparkle_one.png",
+    link: "https://sparkle-one-beta.vercel.app/",
+    accentColor: "#2aa198",
+  },
+  {
+    title: "Plate Date",
+    category: "Bakery & Patisserie",
+    filterCategory: "Frontend",
+    tech: {
+      frontend: "React, Next Js",
+      backend: "None (Static Page)",
+      database: "None",
+      cloud: "Vercel, Git",
+    },
+    description:
+      "Elegant bakery & patisserie storefront for Plate Date featuring premium handcrafted pastries, artisan cakes, and a beautiful e-commerce shopping experience.",
+    features: [
+      "Warm, premium aesthetic with soft color palette and elegant typography",
+      "Shop & best sellers showcase with product browsing experience",
+      "Emphasis on premium ingredients, daily fresh baking, and beautiful packaging",
+      "Fully responsive architecture optimized for all device viewports",
+    ],
+    image: "/images/platedate.png",
+    link: "https://plate-date-psi.vercel.app/",
+    accentColor: "#c48b7a",
+  },
+  {
     title: "JFL Digital",
     category: "Marketing Agency Website",
     filterCategory: "Frontend",
